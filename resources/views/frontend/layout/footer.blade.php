@@ -50,9 +50,8 @@
             <div class="col-md-6 col-lg-3 offset-lg-1">
                 <h5 class="text-transform-none font-weight-bold text-color-light text-4-5 mb-4">Mesai Saatleri</h5>
                 <ul class="list list-unstyled list-inline custom-list-style-1 mb-0">
-                    <li>Pazartesi - Cuma</li>
-                    <li>Cumartesi : </li>
-                    <li>Pazar: Kapalı</li>
+                    <li>Pazartesi - Cuma = 10:00 - 22:00</li>
+                    <li>Cumartesi : 10:00 - 22:00</li>
                 </ul>
             </div>
         </div>
