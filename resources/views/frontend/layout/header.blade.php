@@ -55,7 +55,7 @@
                                         <li><a href="{{ route('home')}}" class="nav-link">Anasayfa</a></li>
                                         <li><a href="#" class="nav-link active">Hakkımda</a></li>
                                         <li class="dropdown">
-                                            <a href="demo-auto-services-services.html" class="nav-link dropdown-toggle">Çalışma Alanlarımız</a>
+                                            <a href="#" class="nav-link dropdown-toggle">Çalışma Alanlarımız</a>
                                             <ul class="dropdown-menu">
                                                 @foreach ($Service as $item)
                                                     <li><a href="{{ route('servicedetail', $item->slug)}}" class="dropdown-item">{{$item->title }}</a></li>

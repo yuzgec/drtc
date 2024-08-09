@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Mail;
 class HomeController extends Controller
 {
 
+
+     public function demo(){
+        return view('frontend.demo');
+     }
+     
     public function index(){
         SEOMeta::setTitle('Psi̇ki̇yatri̇st Uzm. Dr. Turan Çetin | Suadiye Psi̇ki̇yatri̇st Kliniği');
         SEOMeta::setDescription("Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin'in Kadıköy Suadiye'de bulunan kliniğinin resmi internet sitesidir.");
