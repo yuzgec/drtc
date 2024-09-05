@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Mail;
 class HomeController extends Controller
 {
 
-     public function demo(){
-        return view('frontend.demo');
-     }
-
     public function index(){
         SEOMeta::setTitle('Uzm. Dr. Turan Çetin | Kumar ve Alkol Bağımlılığı Tedavisi');
         SEOMeta::setDescription("Psi̇ki̇yatri̇st ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin'in Kadıköy Suadiye'de bulunan kliniğinin resmi internet sitesidir.");
