@@ -16,7 +16,7 @@ class HomeController extends Controller
 
     public function index(){
         SEOMeta::setTitle('Uzm. Dr. Turan Çetin | Kumar ve Alkol Bağımlılığı Tedavisi');
-        SEOMeta::setDescription("Psi̇ki̇yatri̇st ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin'in Kadıköy Suadiye'de bulunan kliniğinin resmi internet sitesidir.");
+        SEOMeta::setDescription("Psikiyatrist ve Psikoterapist Uzm. Dr. Turan Çetin'in Kadıköy Suadiye'de bulunan kliniğinin resmi internet sitesidir.");
         SEOMeta::setCanonical(url()->full());
 
         return view('frontend.index');
@@ -25,8 +25,8 @@ class HomeController extends Controller
 
     public function contact(){
 
-        SEOMeta::setTitle('İletişim | Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin | Suadiye Psi̇ki̇yatri̇st');
-        SEOMeta::setDescription("Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin'in Kadıköy Suadiye'de bulunan kliniğinin iletişim sayfasıdır.");
+        SEOMeta::setTitle('İletişim | Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin | Suadiye Psikiyatrist');
+        SEOMeta::setDescription("Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin'in Kadıköy Suadiye'de bulunan kliniğinin iletişim sayfasıdır.");
         SEOMeta::setCanonical(url()->full());
         return view('frontend.contact');
     }
@@ -34,8 +34,8 @@ class HomeController extends Controller
     public function servicedetail($url){
         $Detail = Service::where('slug', $url)->firstOrFail();
 
-        SEOMeta::setTitle($Detail->title. ' | Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin');
-        SEOMeta::setDescription($Detail->title. ' | Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin');
+        SEOMeta::setTitle($Detail->title. ' | Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin');
+        SEOMeta::setDescription($Detail->title. ' | Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin');
         SEOMeta::setCanonical(url()->full());
 
 
@@ -45,8 +45,8 @@ class HomeController extends Controller
     public function service(){
 
 
-        SEOMeta::setTitle('Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin | Kadıköy Psi̇ki̇yatri̇st');
-        SEOMeta::setDescription("Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin'in Kadıköy Suadiye'de bulunan kliniğinin resmi internet sitesidir.");
+        SEOMeta::setTitle('Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin | Kadıköy Psikiyatrist');
+        SEOMeta::setDescription("Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin'in Kadıköy Suadiye'de bulunan kliniğinin resmi internet sitesidir.");
         SEOMeta::setCanonical(url()->full());
 
         return view('frontend.service.index');
@@ -55,8 +55,8 @@ class HomeController extends Controller
     public function blogdetail($url){
         $Detail = Blog::where('slug', $url)->firstOrFail();
 
-        SEOMeta::setTitle($Detail->title. ' | Psi̇ki̇yatri̇st Uzm. Dr. Turan Çetin | Suadiye Psikiyatrist');
-        SEOMeta::setDescription($Detail->title. ' | Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin');
+        SEOMeta::setTitle($Detail->title. ' | Psikiyatrist Uzm. Dr. Turan Çetin | Suadiye Psikiyatrist');
+        SEOMeta::setDescription($Detail->title. ' | Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin');
         SEOMeta::setCanonical(url()->full());
 
 
@@ -67,8 +67,8 @@ class HomeController extends Controller
     public function corporatedetail($url){
         $Detail = Page::where('slug', $url)->firstOrFail();
 
-        SEOMeta::setTitle($Detail->title. ' | Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin');
-        SEOMeta::setDescription($Detail->title. ' | Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin');
+        SEOMeta::setTitle($Detail->title. ' | Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin');
+        SEOMeta::setDescription($Detail->title. ' | Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin');
         SEOMeta::setCanonical(url()->full());
 
         return view('frontend.page.detail', compact('Detail'));
@@ -77,8 +77,8 @@ class HomeController extends Controller
 
     public function blog(){
 
-        SEOMeta::setTitle('Makaleler | Psi̇ki̇yatri̇st ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin');
-        SEOMeta::setDescription('Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin');
+        SEOMeta::setTitle('Makaleler | Psikiyatrist ve Psikoterapist Uzm. Dr. Turan Çetin');
+        SEOMeta::setDescription('Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin');
         SEOMeta::setCanonical(url()->full());
 
         $Blog = Blog::all();
@@ -89,8 +89,8 @@ class HomeController extends Controller
 
     public function video(){
 
-        SEOMeta::setTitle('Video Galeri | Psi̇ki̇yatri̇st ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin');
-        SEOMeta::setDescription('Psi̇ki̇yatri̇st Ve Psi̇koterapi̇st Uzm. Dr. Turan Çetin');
+        SEOMeta::setTitle('Video Galeri | Psikiyatrist ve Psikoterapist Uzm. Dr. Turan Çetin');
+        SEOMeta::setDescription('Psikiyatrist Ve Psikoterapist Uzm. Dr. Turan Çetin');
         SEOMeta::setCanonical(url()->full());
 
         $Video = Video::all();

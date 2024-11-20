@@ -1,10 +1,9 @@
 <footer id="footer" class="border-0 mt-0">
-    <div class="container py-2">
        
     <div class="container pb-5">
         <div class="row text-center text-md-start py-4 my-5">
             <div class="col-md-6 col-lg-3 align-self-center text-center text-md-start text-lg-center mb-5 mb-lg-0">
-                <a href="demo-auto-services.html" class="text-decoration-none">
+                <a href="{{ route('home')}}" class="text-decoration-none">
                     <img src="/uzman-dr-turan-cetin-beyaz.png" class="img-fluid" alt="SUADİYE PSİKİYATRİST" />
                 </a>
             </div>
@@ -25,7 +24,7 @@
                         </ul>
                     </li>
                     <li class="pb-1 mb-2">
-                        <span class="d-block font-weight-semibold line-height-1 text-color-grey text-3-5">EMAIL</span>
+                        <span class="d-block font-weight-semibold line-height-1 text-color-grey text-3-5">EMAİL</span>
                         <a href="mailto:m{{ config('settings.email1')}}" class="text-decoration-none font-weight-light text-3-5 text-color-light text-color-hover-default">{{ config('settings.email1')}}</a>
                     </li>
                 </ul>
@@ -56,11 +55,12 @@
             </div>
         </div>
     </div>
+
     <div class="footer-copyright bg-light py-2">
         <div class="container py-2">
             <div class="row">
                 <div class="col">
-                    <p class="text-center text-3 mb-0">Uzman Dr. turan Çetin © 2024. Tüm Hakları Saklıdır.</p>
+                    <p class="text-center text-3 mb-0">“Bu sitede yer alan içerikler yalnızca bilgilendirme amaçlıdır. Teşhis ve tedavi için mutlaka hekiminize danışınız.”</p>
                 </div>
             </div>
         </div>
